@@ -302,7 +302,7 @@ img {
 /*---------JOBS--------*/
 
 .jobs-section {
-    background: var(--lightsection-colo);
+    background: var(--lightsection-color);
     padding-bottom: 94px;
 }
 
@@ -426,7 +426,7 @@ img {
     border-radius: 50%;
     background-color: var(--lighttitle-text-color) ;
 
-    transition-property: initial;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -440,6 +440,10 @@ img {
     width: 20px;
     height: 20px;
     fill: var(--icon-color);
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover,
@@ -682,11 +686,13 @@ img {
     line-height: 1.625;   
     text-align: center;
     letter-spacing: 0.03em;
+    color: var(--title-text-color);
     border-radius: 4px;
     border: 0px; 
     padding: 6px 22px;
+    background-color: #F5F4FA;
 
-    transition-property: initial;
+    transition-property: color, background-color, border-radius, boerder, box-shadow, cursor;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -694,7 +700,7 @@ img {
 .galery-filter-button:hover,
 .galery-filter-button:focus {
     color: var(--lighttitle-text-color);
-    background: var(--accent-color);
+    background-color: var(--accent-color);
     border-radius: 4px;
     border: 0px;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -713,7 +719,7 @@ img {
     margin-bottom: 30px;
     background: var(--lighttitle-text-color);
 
-    transition-property: initial;
+    transition-property: box-sizing, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -781,7 +787,7 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.galery-overlay:hover .galery-overlay-box {
+.galery-list-link:hover .galery-overlay-box {
     transform: translateY(0);
     opacity: 1;       
 }
