@@ -218,7 +218,8 @@ img {
     line-height: 1.875;
     letter-spacing: 0.06em;
     color: var(--lighttitle-text-color);
-    background: var(--accent-color);       
+    background: var(--accent-color); 
+    cursor: pointer;      
 
     border-radius: 4px;
     width: 200px;
